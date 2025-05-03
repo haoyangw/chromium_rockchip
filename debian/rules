@@ -126,6 +126,16 @@ defines+=use_gio=true \
          ffmpeg_branding=\"Chrome\" \
          disable_fieldtrial_testing_config=true \
 
+# Rockchip-specific features
+defines+=use_v4lplugin=true \
+	 fatal_linker_warnings=false \
+	 use_ozone=true
+
+# Additional feature
+ifneq (,$(GOOGLE_API_KEY))
+defines+=google_api_key=\"$(GOOGLE_API_KEY)\"
+endif
+
 # handle parallel build options
 njobs=1
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
