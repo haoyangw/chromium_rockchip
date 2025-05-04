@@ -12,6 +12,9 @@ export DEB_BUILD_MAINT_OPTIONS+=optimize=-lto
 # indicate that binary targets do not require root
 export DEB_RULES_REQUIRES_ROOT=no
 
+# Use Chromium depot_tools binaries
+export PATH := $(HOME)/depot_tools:$(PATH)
+
 # compile with clang (gcc is currently not supported)
 export AR=ar
 export NM=nm
