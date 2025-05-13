@@ -50,7 +50,7 @@ system/event.patch
 system/openjpeg.patch
 system/opus.patch
 system/eu-strip.patch
-#system/rapidjson.patch
+system/rapidjson.patch
 system/rollup.patch
 
 bookworm/constflatset.patch
