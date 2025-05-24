@@ -126,10 +126,10 @@ defines+=use_gio=true \
          ffmpeg_branding=\"Chrome\" \
          disable_fieldtrial_testing_config=true \
 
-# Rockchip-specific features
-defines+=use_v4lplugin=true \
-	 fatal_linker_warnings=false \
-	 use_ozone=true
+# Rockchip-specific features(ARM architectures only)
+ifneq (,$(filter armhf arm64,$(DEB_HOST_ARCH)))
+defines+=use_v4lplugin=true
+endif
 
 # Additional feature
 ifneq (,$(GOOGLE_API_KEY))
