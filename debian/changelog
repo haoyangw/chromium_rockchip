@@ -1,4 +1,4 @@
-chromium (132.0.6834.159-1+rkmpp2~deb12u1) bookworm; urgency=medium
+chromium (132.0.6834.159-1+rkmpp2~deb12u1) bookworm-updates; urgency=medium
 
   * Import widevine-arm64.patch from amazingfate
   * Cherry-pick libsync fixes for panthor from amazingfate
@@ -7,7 +7,7 @@ chromium (132.0.6834.159-1+rkmpp2~deb12u1) bookworm; urgency=medium
 
  -- Wang Haoyang <haoyangw@gmail.com>  Sat, 24 May 2025 17:43:00 +0800
 
-chromium (132.0.6834.159-1+rkmpp~deb12u1) bookworm; urgency=medium
+chromium (132.0.6834.159-1+rkmpp~deb12u1) bookworm-updates; urgency=medium
 
   * Import Rockchip-specific patches to enable Rockchip mpp support
     and libmali support
