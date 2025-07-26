@@ -14,3 +14,6 @@ export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --disable-pings"
 
 # Disable the builtin media router (bug #833477)
 export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --media-router=0"
+
+# Enable V4L2 decoding and encoding by default
+export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --enable-features=VaapiVideoDecoder,VaapiVideoEncoder"
