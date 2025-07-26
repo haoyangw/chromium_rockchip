@@ -113,6 +113,11 @@ defines+=use_gio=true \
          ffmpeg_branding=\"Chrome\" \
          disable_fieldtrial_testing_config=true \
 
+# Enable V4L2 plugin for Rockchip MPP support on ARM architectures
+ifneq (,$(filter armhf arm64,$(DEB_HOST_ARCH)))
+defines+=use_v4lplugin=true
+endif
+
 # handle parallel build options
 njobs=1
 ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
