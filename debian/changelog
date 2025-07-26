@@ -1,3 +1,16 @@
+chromium (126.0.6478.182-1ppa1~24.04.1) noble; urgency=medium
+
+  * Release Chromium 126.0.6478 with Rockchip MPP patches to Ubuntu Noble.
+  * Update rust dependency for Ubuntu
+  * Compile with V4L2 plugin enabled for Rockchip MPP support
+  * Apply default Chromium flags for V4L2 encode/decode
+  * Add patch to enable widevine on Linux arm64 system
+  * patches: Update hardcoded V4L2 library path for Debian/Ubuntu
+  * Enable a subset of Rockchip MPP patches
+  * Import Rockchip MPP patches for Chromium 126.0.6478
+
+ -- Wang Haoyang <haoyangw@gmail.com>  Sat, 26 Jul 2025 16:21:03 +0800
+
 chromium (126.0.6478.182-1~deb12u1) bookworm-security; urgency=high
 
   * New upstream security release.
