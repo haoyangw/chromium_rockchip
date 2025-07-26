@@ -23,6 +23,7 @@ fixes/bad-font-gc1.patch
 fixes/bad-font-gc11.patch
 fixes/bad-font-gc2.patch
 fixes/bad-font-gc3.patch
+fixes/libsync-rk3588-panthor.patch
 
 upstream/mojo.patch
 upstream/mojo-null.patch
